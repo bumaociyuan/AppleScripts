@@ -1,0 +1,19 @@
+#!/bin/bash
+
+case $1 in
+start)
+/Users/niko/Library/Tomcat/bin/startup.sh
+;;
+stop)
+/Users/niko/Library/Tomcat/bin/shutdown.sh
+;;
+restart)
+/Users/niko/Library/Tomcat/bin/shutdown.sh
+/Users/niko/Library/Tomcat/bin/startup.sh
+;;
+*)
+echo “Usage: start|stop|restart”
+;;
+esac
+
+exit 0
