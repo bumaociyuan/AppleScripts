@@ -1,0 +1,8 @@
+#!/bin/bash
+
+source kvm.sh;
+echo source kvm.sh;
+kvm upgrade;
+echo kvm upgrade;
+source kvm.sh;
+echo source kvm.sh;
